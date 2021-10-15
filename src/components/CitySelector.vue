@@ -5,6 +5,7 @@
       v-else
       :placeholder="citySelectPlaceHolder"
       :options="options"
+      :value="`${selected.name} / ${selected.sys.country} `"
       class="select-countries"
       @input="onChange"
     />
