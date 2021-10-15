@@ -17,11 +17,15 @@
         </td>
       </tr>
     </table>
-    <table>
+    <table class="days-buttons">
       <tr>
-        <td v-for="(col, index) in allDays" :key="index" class="days-buttons">
-          <button :value="col" v-on:click="changeSelectedDay">
-            {{ `${selectedDay} ${selectedMonth}` }}
+        <td v-for="(col, index) in allDays" :key="index">
+          <button
+            class="days-button"
+            :value="col"
+            v-on:click="changeSelectedDay"
+          >
+            {{ col }}
           </button>
         </td>
       </tr>

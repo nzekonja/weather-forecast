@@ -1,5 +1,7 @@
 @import "./components/footer.scss";
 @import "vue-select/src/scss/vue-select.scss";
+@import "./components/weatherInfo.scss";
+@import "./components/weatherTable.scss";
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,7 +9,12 @@
   color: #2c3e50;
 
   #divider {
+    height: 10px;
     margin-bottom: 2vh; /* how high is your footer */
+  }
+
+  #content {
+    margin-bottom: 10%;
   }
 }
 

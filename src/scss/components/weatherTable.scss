@@ -1,0 +1,37 @@
+#forecast-table {
+  margin-left: 35%;
+  margin-top: 1%;
+  margin-right: 10%;
+  td,
+  thead {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+.days-buttons {
+  margin-top: 0.7%;
+  margin-left: 38%;
+  .days-button {
+    border-radius: 8px;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 1.5%;
+    background-color: lightgray;
+  }
+}
+.days-buttons :not(:first-child) {
+  padding-left: 25px;
+}

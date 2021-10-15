@@ -1,5 +1,5 @@
 <template>
-  <div v-if="selected" class="short-weather-info">
+  <div v-if="selected" class="weather-info">
     <div class="clouds-info">
       <p class="clouds-title">Clouds</p>
       <p class="clouds-description">{{ selected.weather[0].description }}</p>
@@ -8,7 +8,7 @@
       <p class="temperature-value">{{ `${temperatureInC}°C` }}</p>
       <p class="wind-info">{{ `Wind ${selected.wind.speed} m/s` }}</p>
     </div>
-    <button v-on:click="toogleShowMore">
+    <button class="see-forecast-button" v-on:click="toogleShowMore">
       {{ showMore ? `Close` : "See Forecast" }}
     </button>
     <SyncLoader v-if="loadingForecast" />

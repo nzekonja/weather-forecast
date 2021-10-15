@@ -1,20 +1,24 @@
 .footer {
+  margin-top: 1.3vh;
   margin-bottom: 0;
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: 6%;
   background-color: lightgray;
-  margin-left: 0px;
+  width: 105%;
   text-align: left;
-  padding-left: 10vh;
+  margin-left: -1%;
   padding-top: 3vh;
 
   .title {
-    font-size: 2.1vh;
+    font-size: 1.1vw;
+    padding-left: 10vh;
   }
   .author {
+    padding-left: 10vh;
     padding-top: 1vh;
-    font-size: 1.5vh;
+    font-size: 0.7vw;
     padding-bottom: 3vh;
   }
 }
